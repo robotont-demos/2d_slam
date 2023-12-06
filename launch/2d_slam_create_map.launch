@@ -18,7 +18,7 @@
     <remap from="image" to="camera/depth/image_rect_raw"/>
   </node>
   <!-- Mapping method-->
-  <include file="$(find 2d_slam)/launch/gmapping.launch">
+  <include file="$(find slam_2d)/launch/gmapping.launch">
     <arg name="prefix" value="$(arg prefix)"/>
   </include>
 </launch>

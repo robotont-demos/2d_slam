@@ -20,7 +20,7 @@
   <env name="prefix" value="$(arg prefix)"/>
   <node name="cartographer_node" pkg="cartographer_ros"
     type="cartographer_node" args="
-      -configuration_directory $(find 2d_slam)/config
+      -configuration_directory $(find slam_2d)/config
       -configuration_basename robotont_cartographer_localization_2d.lua" 
     output="screen">
   </node>

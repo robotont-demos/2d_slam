@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(2d_slam)
+project(slam_2d)
 
 find_package(catkin REQUIRED COMPONENTS
   robotont_msgs

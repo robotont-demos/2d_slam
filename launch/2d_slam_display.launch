@@ -1,4 +1,4 @@
 <?xml version="1.0" ?>
 <launch>
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find 2d_slam)/config/robotont_2d_mapping.rviz" output="screen" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find slam_2d)/config/robotont_2d_mapping.rviz" output="screen" />
 </launch>

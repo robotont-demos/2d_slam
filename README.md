@@ -19,16 +19,16 @@ sudo apt install ros-noetic-gmapping
 
 Start the 2D SLAM:
 ```bash
-roslaunch 2d_slam 2d_slam.launch
+roslaunch slam_2d slam_2d.launch
 ```
 
 If hector_slam or cartographer have been installed in Robotont, one can select a different method with a **mapping_method** argument. For example, to use the default gmapping:
 
 ```bash
-roslaunch 2d_slam 2d_slam.launch mapping_method:=gmapping
+roslaunch slam_2d slam_2d.launch mapping_method:=gmapping
 ```
 
 **On PC**, visualize the result in RViz with:<br/>
 ```bash
-roslaunch 2d_slam 2d_slam_display.launch
+roslaunch slam_2d slam_2d_display.launch
 ```

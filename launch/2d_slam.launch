@@ -19,7 +19,7 @@
     <remap from="image" to="camera/depth/image_rect_raw"/>
   </node>
   <!-- Mapping method-->
-  <include file="$(find 2d_slam)/launch/$(arg mapping_method).launch">
+  <include file="$(find slam_2d)/launch/$(arg mapping_method).launch">
     <arg name="prefix" value="$(arg prefix)"/>
   </include>
 
