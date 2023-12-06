@@ -1,4 +1,4 @@
-# 2D SLAM
+# SLAM 2D
 This repository is a ROS package that contains 2D mapping demo showing the capabilities of the Robotont platform create a 2D map of the surrounding using different methods.
 
 ## Prerequisites installed on the Robotont on-board computer
@@ -17,7 +17,7 @@ sudo apt install ros-noetic-gmapping
 
 **On Robotont on-board computer**
 
-Start the 2D SLAM:
+Start the SLAM 2D:
 ```bash
 roslaunch slam_2d slam_2d.launch
 ```
