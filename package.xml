@@ -1,34 +1,28 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>slam_2d</name>
-  <version>0.0.0</version>
-  <description>The slam_2d package</description>
-  <maintainer email="gurovaid@todo.todo">gurovaid</maintainer>
+    <name>2d_slam</name>
+    <version>0.0.1</version>
+    <description>2D SLAM demo for Robotont with ROS 2</description>
 
-  <license>TODO</license>
+    <maintainer email="veiko.vunder@ut.ee">Veiko Vunder</maintainer>
+    <maintainer email="karl.kruusamae@ut.ee">Karl Kruusamäe</maintainer>
 
-  <buildtool_depend>catkin</buildtool_depend>
-  <build_depend>robotont_msgs</build_depend>
-  <build_depend>roscpp</build_depend>
-  <build_depend>rospy</build_depend>
-  <build_depend>std_msgs</build_depend>
-  <build_export_depend>robotont_msgs</build_export_depend>
-  <build_export_depend>roscpp</build_export_depend>
-  <build_export_depend>rospy</build_export_depend>
-  <build_export_depend>std_msgs</build_export_depend>
-  <exec_depend>robotont_description</exec_depend>
-  <exec_depend>robotont_nuc_description</exec_depend>
-  <exec_depend>robotont_driver</exec_depend>
-  <exec_depend>robotont_msgs</exec_depend>
-  <exec_depend>roscpp</exec_depend>
-  <exec_depend>rospy</exec_depend>
-  <exec_depend>std_msgs</exec_depend>
-  <exec_depend>cartographer_ros</exec_depend>
-  <exec_depend>gmapping</exec_depend>
-  <exec_depend>hector_mapping</exec_depend>
-  <exec_depend>move_base</exec_depend>
-  <exec_depend>depthimage_to_laserscan</exec_depend>
+    <url type="website">https://wiki.ros.org/robotont</url>
+    <url type="website">https://robotont.ut.ee</url>
+    <url type="repository">https://github.com/robotont-demos/2d_slam</url>
 
-  <export>
-  </export>
+    <license>Apache 2.0</license>
+
+    <buildtool_depend>ament_cmake</buildtool_depend>
+    <exec_depend>launch</exec_depend>
+    <exec_depend>launch_ros</exec_depend>
+    <exec_depend>ament_index_python</exec_depend>
+    <exec_depend>depthimage_to_laserscan</exec_depend>
+    <exec_depend>robotont_navigation</exec_depend>
+    <exec_depend>slam_toolbox</exec_depend>
+
+    <export>
+        <build_type>ament_cmake</build_type>
+    </export>
+
 </package>

@@ -1,25 +1,12 @@
-cmake_minimum_required(VERSION 3.0.2)
-project(slam_2d)
+cmake_minimum_required(VERSION 3.16)
+project(demo_slam)
 
-find_package(catkin REQUIRED COMPONENTS
-  robotont_msgs
-  roscpp
-  rospy
-  std_msgs
+find_package(ament_cmake REQUIRED)
+
+install(
+  DIRECTORY config launch
+  DESTINATION share/${PROJECT_NAME}
+  FILES_MATCHING PATTERN "*.yaml" PATTERN "*.py" PATTERN "*.xml" PATTERN "*.rviz"
 )
 
-catkin_package(
-  CATKIN_DEPENDS
-    std_msgs
-  )
-
-include_directories(
-  include
-  ${catkin_INCLUDE_DIRS}
-)
-
-install(DIRECTORY include/${PROJECT_NAME}/
-  DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
-  )
-
-install(DIRECTORY config launch src DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
+ament_package()
