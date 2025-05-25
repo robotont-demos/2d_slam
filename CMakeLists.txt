@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(demo_slam)
+project(2d_slam)
 
 find_package(ament_cmake REQUIRED)
 
