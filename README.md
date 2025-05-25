@@ -34,7 +34,7 @@ rosdep install --from-paths src --ignore-src -r -y
 ## **Building the package**
 ```bash
 cd ~/<YOUR_WORKSPACE_NAME_HERE>
-colcon build --packages-select demo_slam
+colcon build --packages-select 2d_slam
 ```
 
 ## **Launch files**
